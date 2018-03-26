@@ -11,11 +11,11 @@ You should also include a README.md in the repo with your scripts. This repo exp
 The repo contains the run_analysis.R code and the 
 
 Description of the run_analysis.R
-It downloads the UCI HAR Dataset data set and puts the zip file working directrory. After it is downloaded, it unzips the file into the UCI HAR Dataset folder.
-It loads the train and test data sets, the features names and the activity codes file.
-It appends the two datasets into one data frame by using rbinds function
-It extracts just the mean and standard deviation from the features data set and then it corrects features names by eliminating the parenthesis and the "-" expressions
-It converts  thit to lower case using tolower and removes underscore using gsub. activity and subject column names are named for y and subj data sets, respectively.
-The three data sets, x, y and subj, are merged. Then, it is exported as a txt file into the Project folder in the same working directory, named merged.txt.
-The mean of activities and subjects are created into a separate tidy data set which is exported into the Project folder as txt file; this is named average.txt.
-The R code contains str for easier preview of the two final data sets.
+
+1. It downloads the UCI HAR Dataset data set and puts the zip file working directrory. After it is downloaded, it unzips the file into the UCI HAR Dataset folder.
+2. It loads the train and test data sets, the features names, and the activity codes file.
+3. It appends the two datasets into one data frame by using rbinds function
+4. It extracts just the mean and standard deviation from the features data set and then it corrects features names by eliminating the parenthesis and the "-" expressions
+5. It appropriately changes the name of the selected features in order to be more explicit and desriptive
+5. It averages the data by subject and activity. A new tidy data frame is created and exported in the project folder as txt file. 
+
